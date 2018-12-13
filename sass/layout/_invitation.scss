@@ -1,0 +1,53 @@
+.invitation{
+
+&-svg img{
+    width:18rem;
+    max-height:30%;
+   position:absolute;
+   top:2rem;
+   left:50%;
+   transform:translateX(-50%);
+}
+
+
+&-sent{
+    position: absolute;
+    top:25%;
+    font-size:3.3rem;
+    width:40%;
+    line-height: 1.1;
+    left:7rem;
+}
+&-list{
+    position: absolute;
+    top:37%;
+  
+    width:80%;
+    margin: 0 10%;
+}
+&-person{
+    display:grid;
+    grid-template-columns: 1fr 4fr !important;
+    
+}
+
+&-buttons-wrapper{
+    width:100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    position:absolute;
+    bottom:3rem;
+}
+&-btn-task{
+
+
+}
+
+&-btn-continue{
+ 
+   
+}
+
+
+
+}

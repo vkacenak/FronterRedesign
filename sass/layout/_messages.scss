@@ -1,0 +1,76 @@
+.messages {
+    &-top-bar {
+        height: 6.5rem;
+        background-color: #233249;
+        position: relative;
+    }
+
+    &-heading {
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1.5rem 1.2rem;
+        color: white;
+        display: inline-block;
+    }
+
+    &-search-icon {
+        position: absolute;
+        right: 2rem;
+        top: 2.2rem;
+    }
+
+
+    &-conversation {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        
+
+        &-content {
+            margin-left: 2rem;
+        }
+
+        &-nameholder {
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+
+        &-thumbnail {
+            width: 5.4rem;
+            height: 5.4rem;
+            background-color: #5E80B6;
+            border-radius: 2rem;
+            margin: 2.3rem 2rem;
+            box-shadow: 0px 3px 6px #DADADA;
+        }
+        &-text{width:95%;
+        font-size:0.9rem;}
+    }
+&-bottom-bar{position: fixed;
+    bottom:0;
+    display:block;
+    width:100%;
+height:4rem;
+background-color: white;
+box-shadow: 0px 0px 10px #DADADA;
+}
+&-btn{margin-top:-2rem;}
+}
+
+.name {
+    font-size: 1.6rem;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.surname {
+    font-size: 1.6rem;
+    margin-left: 0.1rem;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.not-read{
+    background-color: #F4F4F4;
+ & .messages-conversation-text{font-weight: 700;}
+}

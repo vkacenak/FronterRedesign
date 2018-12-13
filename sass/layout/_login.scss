@@ -1,0 +1,59 @@
+.login{
+
+height:100%;
+overflow-y:hidden;
+&-btn{position:absolute;
+margin-top:3rem;
+left:50%;
+transform:translateX(-50%);}
+&-logo{position: absolute;
+top:20%;
+left:50%;
+
+transform:translate(-50%,-50%);
+}
+&-form{position:absolute;
+top:40%;
+left:50%;
+transform: translateX(-50%);
+
+&-big-label{
+    padding-bottom:1rem;
+    font-size:1.7rem;
+    color:#666666;
+    font-weight:400;
+
+}
+&-remember{
+    font-size:1rem;
+    font-weight:700;
+    color:rgba(0, 0, 0, 0.603);
+    margin:0;
+    float:right;
+}
+
+
+
+& input[type="checkbox"]{
+float:right;
+margin-top:0.2rem;
+width:2.5rem;}
+}
+
+&-language{
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform:translateX(-50%);
+}
+&-shape{
+    position:absolute;
+    bottom:0;
+    width:100vw;
+    height:30vh;
+    background-image: url('../img/svg-login.png');
+    background-size:cover;
+    z-index:-1;
+}
+
+}

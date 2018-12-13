@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+
+    <title></title>
+</head>
+  
+<body>
+<div class="view">
+<section class="chat">
+    <div class="chat-top-bar">
+        <h2 class="chat-top-bar-name">
+            The Weekenders
+        </h2>
+        <h3 class="chat-top-bar-desc">03.02.01 Simple Animation</h3>
+        <img src="img/hamburger-icon.png" alt="" class="chat-top-bar-hamburger">
+    </div>
+    <div class="chat-bottom-bar">
+<div class="chat-bottom-bar-icons"><img src="img/icons.png" alt=""></div>
+
+<div class="chat-bottom-bar-type">
+    <div class="chat-bottom-bar-type-text">
+<input type="email" id="fname" name="fname" placeholder="">
+    </div>
+<div class="chat-bottom-bar-type-send"><button class="btn">Send</button></div>
+</div>
+    </div>
+
+</section>
+
+<section class="burger">
+     <img src="img/back.png" class="burger-back">
+        <h2 class="burger-heading">
+                The Weekenders
+            </h2>
+            <h3 class="burger-desc">03.02.01 Simple Animation</h3>
+    <img src="img/group.png" alt="" class="burger-svg">
+    <ul class="burger-links">
+    <li  class="burger-link"> <img src="img/arrow.png" alt=""> Task Description</li>
+    <li class="burger-link hand-in-link">  <img src="img/arrow.png" alt=""> Direct hand-in</li>
+    <li  class="burger-link">  <img src="img/arrow.png" alt=""> Name of the group</li>
+    <li  class="burger-link"> <img src="img/arrow.png" alt=""> Members</li>
+    <li  class="burger-link"> <img src="img/arrow.png" alt=""> Add a member</li>
+    <a href="index.html"  class="burger-link"> <img src="img/arrow.png" alt="">Log Out</li>
+</ul>
+    </section>
+
+    <section class="hand-in">
+            <img src="img/back.png" class="burger-back hand-in-back">
+            <img src="img/finish.png" alt="" class="hand-in-svg">
+            <h3 class="burger-desc">Hand-in Assignment</h3>
+            <h2 class="burger-heading">
+                    03.02.01 Simple Animation
+                </h2>
+
+                <div class="invitation-btn-task">
+                        <a href="#">
+                                <button class="btn">Select File</button></a>
+                </div>
+                <div class="invitation-btn-continue">
+                        <a href="#">
+                                <button class="btn">Create a Link</button></a>
+                </div>
+               
+
+    </section>
+</div>
+</body>
+<script>
+var burgerMenu = document.querySelector('.chat-top-bar-hamburger');
+var burgerView = document.querySelector('.burger');
+var burgerBack = document.querySelector('.burger-back');
+var handInLink = document.querySelector('.hand-in-link');
+var handInView = document.querySelector('.hand-in');
+var handInBack = document.querySelector('.hand-in-back');
+
+burgerMenu.addEventListener('click',burgerReveal);
+burgerBack.addEventListener('click',burgerHide);
+
+handInLink.addEventListener('click',handInReveal);
+handInBack.addEventListener('click',handInHide);
+
+function handInReveal(){
+    handInView.classList.remove('hideAnim');
+    handInView.classList.add('revealAnim');
+}
+
+function handInHide(){
+    handInView.classList.add('hideAnim');
+    handInView.classList.remove('revealAnim');
+}
+
+function burgerReveal(){
+    burgerView.classList.remove('hideAnim');
+    burgerView.classList.add('revealAnim');
+   
+
+}
+function burgerHide(){
+    burgerView.classList.remove('revealAnim');
+    burgerView.classList.add('hideAnim');
+}
+
+
+</script>
+
+</html>
